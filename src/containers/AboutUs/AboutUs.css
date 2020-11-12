@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.about-us-container {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("https://scontent-otp1-1.xx.fbcdn.net/v/t1.0-9/83505702_161943535098900_6833664736010174464_o.jpg?_nc_cat=100&_nc_sid=a4a2d7&_nc_ohc=Ae1jclo_uhAAX93cway&_nc_ht=scontent-otp1-1.xx&oh=1a64eec6a657e0d7c30a0ba741b651a8&oe=5F7C8E49");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-top {
+  min-height: 15vh;
+  width: 100%;
+}
+.about-top h1 {
+  font-family: "Oleo Script";
+  font-size: 4.5rem;
+  margin-left: 10vw;
+  color: #f67a07;
+}
+@media screen and (max-width: 803px) {
+  .about-top h1 {
+    margin-left: 17vw;
+  }
+}
+@media screen and (max-width: 520px) {
+  .about-top h1 {
+    margin-left: 23vw;
+    font-size: 4rem;
+    padding-top: 3vw;
+  }
+}
+@media screen and (max-width: 407px) {
+  .about-top h1 {
+    margin-left: 25vw;
+    font-size: 3.7rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .about-top h1 {
+    margin-left: 28vw;
+    font-size: 3.1rem;
+    padding-top: 8vw;
+  }
+}
+@media screen and (max-width: 312px) {
+  .about-top h1 {
+    margin-left: 30vw;
+    font-size: 2.9rem;
+    padding-top: 9vw;
+  }
+}
+
+.about-middle {
+  min-height: 40vh;
+  width: 100%;
+  padding: 4vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-middle h1 {
+  margin: 0 0 2vw;
+  padding: 0;
+  font-size: 40px;
+  color: #d8d8d8;
+}
+@media screen and (max-width: 407px) {
+  .about-middle h1 {
+    font-size: 30px;
+  }
+}
+
+.about-middle p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5vw;
+  color: #a7a5a5;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 943px) {
+  .about-middle p {
+    font-size: 1.9vw;
+  }
+}
+@media screen and (max-width: 736px) {
+  .about-middle p {
+    font-size: 2.2vw;
+  }
+}
+@media screen and (max-width: 614px) {
+  .about-middle p {
+    font-size: 3vw;
+  }
+}
+
+.about-bottom {
+  min-height: 60vh;
+  width: 100%;
+}
+
+.wrapper {
+  margin-top: 30px;
+}
+
+.wrapper h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 90px;
+  text-align: left;
+  padding-left: 4vw;
+  color: #d8d8d8;
+}
+@media screen and (max-width: 407px) {
+  .wrapper h1 {
+    font-size: 30px;
+  }
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member {
+  background: #d8d8d8;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  position: relative;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.team .team_member h3 {
+  color: #f67a07;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role {
+  color: #202020;
+  margin: 12px 0;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.team .team_member .team_img {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.team .team_member .team_img img:hover {
+  transform: scale(1.5);
+}

@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery-container {
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.gallery-container h1 {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  color: #f67a07;
+}
+.gallery-container .gallery-content {
+  min-height: 45vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.gallery-container .gallery-content .item {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.gallery-container .gallery-content .item iframe {
+  height: 280px;
+  width: 280px;
+  border-radius: 7px;
+}
+@media screen and (max-width: 670px) {
+  .gallery-container .gallery-content .item {
+    height: 250px;
+    width: 250px;
+  }
+  .gallery-container .gallery-content .item iframe {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 559px) {
+  .gallery-container .gallery-content .item {
+    height: 200px;
+    width: 200px;
+  }
+  .gallery-container .gallery-content .item iframe {
+    height: 180px;
+    width: 180px;
+  }
+}
+@media screen and (max-width: 446px) {
+  .gallery-container .gallery-content .item {
+    height: 160px;
+    width: 160px;
+  }
+  .gallery-container .gallery-content .item iframe {
+    height: 140px;
+    width: 140px;
+  }
+}
+@media screen and (max-width: 355px) {
+  .gallery-container .gallery-content .item {
+    height: 130px;
+    width: 130px;
+  }
+  .gallery-container .gallery-content .item iframe {
+    height: 110px;
+    width: 110px;
+  }
+}

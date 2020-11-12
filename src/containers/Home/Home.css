@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-container {
+  scroll-behavior: smooth;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("./formatie.jpg");
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 18%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section {
+  display: flex;
+  min-height: 25vh;
+}
+.top-section h1 {
+  font-family: "Oleo Script";
+  font-size: 4.5rem;
+  margin-left: 10%;
+  color: #f67a07;
+}
+
+@media screen and (max-width: 950px) {
+  .top-section h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 858px) {
+  .top-section h1 {
+    font-size: 3rem;
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 572px) {
+  .top-section h1 {
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .top-section h1 {
+    margin-left: 23%;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 403px) {
+  .top-section h1 {
+    margin-left: 25%;
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 358px) {
+  .top-section h1 {
+    margin-left: 26%;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 333px) {
+  .top-section h1 {
+    margin-left: 28%;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 308px) {
+  .top-section h1 {
+    margin-left: 30%;
+    font-size: 1.6rem;
+  }
+}
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  justify-content: space-around;
+}
+.middle-section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.middle-section-content h1 {
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #d8d8d8;
+}
+
+@media screen and (max-width: 839px) {
+  .middle-section-content h1 {
+    font-size: 3rem;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 706px) {
+  .middle-section-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 610px) {
+  .middle-section-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .middle-section-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 421px) {
+  .middle-section-content h1 {
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 367px) {
+  .middle-section-content h1 {
+    font-size: 1.25rem;
+    margin-bottom: 5%;
+  }
+}
+.middle-section-content h2 {
+  font-size: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #a7a5a5;
+}
+@media screen and (max-width: 839px) {
+  .middle-section-content h2 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 839px) {
+  .middle-section-content h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 610px) {
+  .middle-section-content h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  .middle-section-content h2 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 421px) {
+  .middle-section-content h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 367px) {
+  .middle-section-content h2 {
+    font-size: 0.8rem;
+  }
+}
+.middle-section-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.middle-section-buttons a {
+  width: 170px;
+  height: 70px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clips-btn {
+  background-color: #f67a07;
+  color: #d8d8d8;
+  transition: transform 0.3s;
+  text-decoration: none;
+}
+.clips-btn:hover {
+  background-color: #ca6304;
+  transform: scale(1.2);
+}
+
+.bottom-section {
+  display: flex;
+  min-height: 25vh;
+}

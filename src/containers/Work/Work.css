@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.work-container {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("trompeta3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.work-top {
+  min-height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.work-top h1 {
+  font-size: 4.5rem;
+  color: #f67a07;
+  font-family: "Oleo Script";
+  margin-left: 8%;
+}
+
+@media screen and (max-width: 1225px) {
+  .work-top h1 {
+    margin-left: 12%;
+  }
+}
+@media screen and (max-width: 788px) {
+  .work-top h1 {
+    margin-left: 15%;
+  }
+}
+@media screen and (max-width: 596px) {
+  .work-top h1 {
+    margin-left: 17%;
+    font-size: 3.7rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .work-top h1 {
+    margin-left: 22%;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 424px) {
+  .work-top h1 {
+    margin-left: 25%;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .work-top h1 {
+    margin-left: 30%;
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 344px) {
+  .work-top h1 {
+    margin-left: 33%;
+    font-size: 1.8rem;
+  }
+}
+.work-middle {
+  min-height: 50vh;
+  width: 90%;
+  margin: 5%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.work-content {
+  flex-basis: 600px;
+  display: flex;
+  align-items: center;
+  height: 300px;
+}
+.work-content p {
+  font-size: 1.3rem;
+  color: #d8d8d8;
+}
+@media screen and (max-width: 522px) {
+  .work-content p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 455px) {
+  .work-content p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 399px) {
+  .work-content p {
+    font-size: 1.05rem;
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 356px) {
+  .work-content p {
+    font-size: 1rem;
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 319px) {
+  .work-content p {
+    font-size: 0.9rem;
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+.best-clip {
+  flex-basis: 550px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.best-clip iframe {
+  width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 2px rgb(31, 30, 30);
+}
+@media screen and (max-width: 486px) {
+  .best-clip iframe {
+    width: 350px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 383px) {
+  .best-clip iframe {
+    width: 300px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 336px) {
+  .best-clip iframe {
+    width: 260px;
+    height: 200px;
+  }
+}
+.work-bottom {
+  padding-bottom: 30px;
+}

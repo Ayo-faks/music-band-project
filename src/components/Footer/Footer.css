@@ -1,0 +1,98 @@
+.footer {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  width: 100%;
+  min-height: 23vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  flex: 1;
+  max-width: 400px;
+  height: 140px;
+  margin: 15px 0 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 32px;
+  color: #d8d8d8;
+  transition: 0.3s linear;
+}
+
+.card:hover .icon {
+  transform: scale(4);
+  opacity: 0;
+}
+
+.card-content h3,
+.card-content span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  opacity: 0;
+}
+@media screen and (max-width: 407px) {
+  .card-content .facebook {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 387px) {
+  .card-content .facebook {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .card-content .facebook {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 311px) {
+  .card-content .facebook {
+    font-size: 9px;
+  }
+}
+
+.card-content h3 {
+  top: 20px;
+  text-transform: uppercase;
+  color: #d8d8d8;
+}
+
+.card-content span {
+  bottom: 10px;
+  color: #d8d8d8;
+  font-weight: bold;
+}
+
+.card:hover h3 {
+  opacity: 1;
+  top: 46px;
+  transition: 0.3s linear 0.3s;
+}
+
+.card:hover span {
+  opacity: 1;
+  bottom: 46px;
+  transition: 0.3s linear 0.3s;
+}
+@media screen and (max-width: 900px) {
+  .card {
+    flex: 100%;
+    max-width: 500px;
+  }
+}

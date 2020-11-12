@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 80%;
+  background-color: #232629;
+}
+.a {
+  color: #232629;
+}
+p {
+  line-height: 1.7;
+}
+h2 {
+  font-family: "Lora", serif;
+  font-size: 1.7em;
+  line-height: 1;
+
+  letter-spacing: 2px;
+}
+div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+button:focus {
+  outline: none;
+}
+
+header.banner {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+#menu-toggle {
+  position: relative;
+  width: 51px;
+  height: 51px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background: transparent;
+}
+#menu-toggle:before,
+#menu-toggle:after {
+  position: absolute;
+  content: "";
+  content: "";
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #fff;
+}
+
+#menu-toggle:before {
+  top: 12px;
+  left: 25px;
+
+  width: 1px;
+  height: 27px;
+}
+#menu-toggle:after {
+  top: 25px;
+  left: 12px;
+
+  width: 27px;
+  height: 1px;
+}
+#menu-toggle:hover:before,
+#menu-toggle:hover:after {
+  -webkit-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+.open #menu-toggle:before,
+.open #menu-toggle:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#menu {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: table;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: "Lora", serif;
+  transition: opacity 0.5s, visibility 0.5s;
+  text-align: center;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.open #menu {
+  visibility: visible;
+
+  opacity: 1;
+}
+#menu ul {
+  display: table-cell;
+  padding: 0;
+  margin-top: 30px;
+
+  list-style: none;
+
+  vertical-align: middle;
+}
+
+#menu ul li .a {
+  display: block;
+
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 80px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #d8d8d8;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#menu ul li .a:hover {
+  font-size: 30px;
+}
